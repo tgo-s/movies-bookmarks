@@ -1,0 +1,7 @@
+D:\Projetos\Pessoal\dev\dotnet-core\movies-bookmarks\src\movies.bookmark.infra\bin\Debug\netcoreapp1.1\movies.bookmark.infra.deps.json
+D:\Projetos\Pessoal\dev\dotnet-core\movies-bookmarks\src\movies.bookmark.infra\bin\Debug\netcoreapp1.1\movies.bookmark.infra.dll
+D:\Projetos\Pessoal\dev\dotnet-core\movies-bookmarks\src\movies.bookmark.infra\obj\Debug\netcoreapp1.1\movies.bookmark.infra.csprojResolveAssemblyReference.cache
+D:\Projetos\Pessoal\dev\dotnet-core\movies-bookmarks\src\movies.bookmark.infra\obj\Debug\netcoreapp1.1\movies.bookmark.infra.AssemblyInfo.cs
+D:\Projetos\Pessoal\dev\dotnet-core\movies-bookmarks\src\movies.bookmark.infra\bin\Debug\netcoreapp1.1\movies.bookmark.infra.pdb
+D:\Projetos\Pessoal\dev\dotnet-core\movies-bookmarks\src\movies.bookmark.infra\obj\Debug\netcoreapp1.1\movies.bookmark.infra.dll
+D:\Projetos\Pessoal\dev\dotnet-core\movies-bookmarks\src\movies.bookmark.infra\obj\Debug\netcoreapp1.1\movies.bookmark.infra.pdb
