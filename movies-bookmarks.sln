@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "movies.bookmarks.infra", "s
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "movies.bookmarks.webapi", "src\movies.bookmarks.webapi\movies.bookmarks.webapi.csproj", "{08B9753B-B204-4642-8809-EC5D8BE55BF9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "movies.bookmarks.domain", "movies.bookmarks.data\movies.bookmarks.domain.csproj", "{FB24DAD5-C216-4259-AC1C-F64FFD7BEFB1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "movies.bookmarks.domain", "src\movies.bookmarks.data\movies.bookmarks.domain.csproj", "{19DEFE02-E504-41E0-B2B2-A311BE20D1BF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{08B9753B-B204-4642-8809-EC5D8BE55BF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{08B9753B-B204-4642-8809-EC5D8BE55BF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{08B9753B-B204-4642-8809-EC5D8BE55BF9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FB24DAD5-C216-4259-AC1C-F64FFD7BEFB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FB24DAD5-C216-4259-AC1C-F64FFD7BEFB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FB24DAD5-C216-4259-AC1C-F64FFD7BEFB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FB24DAD5-C216-4259-AC1C-F64FFD7BEFB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19DEFE02-E504-41E0-B2B2-A311BE20D1BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19DEFE02-E504-41E0-B2B2-A311BE20D1BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19DEFE02-E504-41E0-B2B2-A311BE20D1BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19DEFE02-E504-41E0-B2B2-A311BE20D1BF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

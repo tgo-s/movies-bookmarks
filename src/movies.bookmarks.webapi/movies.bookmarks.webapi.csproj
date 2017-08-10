@@ -17,8 +17,8 @@
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="1.0.1" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\movies.bookmarks.data\movies.bookmarks.domain.csproj" />
     <ProjectReference Include="..\movies.bookmark.infra\movies.bookmarks.infra.csproj" />
+    <ProjectReference Include="..\movies.bookmarks.data\movies.bookmarks.domain.csproj" />
   </ItemGroup>
 
 </Project>

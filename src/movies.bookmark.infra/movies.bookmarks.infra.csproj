@@ -13,12 +13,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\movies.bookmarks.data\movies.bookmarks.domain.csproj" />
+    <Folder Include="interfaces\" />
+    <Folder Include="util\" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="interfaces\" />
-    <Folder Include="util\" />
+    <ProjectReference Include="..\movies.bookmarks.data\movies.bookmarks.domain.csproj" />
   </ItemGroup>
 
 </Project>
