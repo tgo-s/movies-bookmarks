@@ -7459,9 +7459,6 @@
       "originalTargetFrameworks": [
         "netcoreapp1.1"
       ],
-      "files": {
-        "lib/netcoreapp1.1/movies.bookmarks.domain.dll": "D:\\Projetos\\Pessoal\\dev\\dotnet-core\\movies-bookmarks\\src\\movies.bookmarks.data\\bin\\placeholder\\netcoreapp1.1\\movies.bookmarks.domain.dll"
-      },
       "frameworks": {
         "netcoreapp1.1": {
           "projectReferences": {}
@@ -7473,7 +7470,8 @@
         "dependencies": {
           "Microsoft.NETCore.App": {
             "target": "Package",
-            "version": "1.1.2"
+            "version": "1.1.2",
+            "autoReferenced": true
           },
           "Newtonsoft.Json": {
             "target": "Package",

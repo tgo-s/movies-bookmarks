@@ -2545,12 +2545,6 @@
         "dependencies": {
           "Microsoft.NETCore.App": "1.1.2",
           "Newtonsoft.Json": "10.0.3"
-        },
-        "compile": {
-          "bin/placeholder/netcoreapp1.1/movies.bookmarks.domain.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/netcoreapp1.1/movies.bookmarks.domain.dll": {}
         }
       }
     }
@@ -7765,9 +7759,6 @@
       "originalTargetFrameworks": [
         "netcoreapp1.1"
       ],
-      "files": {
-        "lib/netcoreapp1.1/movies.bookmarks.infra.dll": "D:\\Projetos\\Pessoal\\dev\\dotnet-core\\movies-bookmarks\\src\\movies.bookmark.infra\\bin\\placeholder\\netcoreapp1.1\\movies.bookmarks.infra.dll"
-      },
       "frameworks": {
         "netcoreapp1.1": {
           "projectReferences": {
@@ -7781,7 +7772,11 @@
     "frameworks": {
       "netcoreapp1.1": {
         "dependencies": {
-          "Microsoft.NETCore.App": {
+          "Microsoft.Extensions.Configuration.FileExtensions": {
+            "target": "Package",
+            "version": "1.1.2"
+          },
+          "Microsoft.Extensions.Configuration.Json": {
             "target": "Package",
             "version": "1.1.2"
           },
@@ -7793,13 +7788,10 @@
             "target": "Package",
             "version": "1.1.2"
           },
-          "Microsoft.Extensions.Configuration.FileExtensions": {
+          "Microsoft.NETCore.App": {
             "target": "Package",
-            "version": "1.1.2"
-          },
-          "Microsoft.Extensions.Configuration.Json": {
-            "target": "Package",
-            "version": "1.1.2"
+            "version": "1.1.2",
+            "autoReferenced": true
           },
           "Microsoft.Extensions.Options": {
             "target": "Package",
