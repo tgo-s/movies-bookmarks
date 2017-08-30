@@ -8,6 +8,8 @@ namespace movies.bookmarks.domain.util
     {
         public MovieApiSettings MovieApiSettings { get; set; }
         public LoggingSettings Logging { get; set; }
+        public ProxyServerSettings ProxyServerSettings { get; set; }
+        public bool UseProxy { get; set; }
     }
 
     public class LoggingSettings
@@ -27,8 +29,6 @@ namespace movies.bookmarks.domain.util
         public string ApiBaseUrl { get; set; } 
         public MovieApiAuthAddresses AuthAddresses { get; set; }
         public MovieApiMoviesAddresses MovieAddresses { get; set; }
-
-
     }
 
     public class MovieApiAuthAddresses
@@ -43,5 +43,13 @@ namespace movies.bookmarks.domain.util
     public class MovieApiMoviesAddresses
     {
         public string DiscoverMoviesUrl { get; set; }
+    }
+
+    public class ProxyServerSettings
+    {
+        public string Address { get; set; }
+        public int Port { get; set; }
+        public string Username { get; set; }
+        public string Password { get; set; }
     }
 }

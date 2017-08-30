@@ -9,18 +9,18 @@ namespace movies.bookmarks.infra.moviedb
 {
     public class Authentication : GenericGateway
     {
-        public Authentication(IOptions<AppSettings> settings) 
-            : base(settings){ }
-        
+        public Authentication(IOptions<AppSettings> settings) : base(settings) { }
+
+
         /// <summary>
         /// Request a TheMovieDB token for use on the app
         /// </summary>
         /// <returns></returns>
         public async Task<Token> RequestTokenAsync()
         {
-            string urlParameter = $"{settings.Value.MovieApiSettings.AuthAddresses.RequestTokenUrl}?api_key={settings.Value.MovieApiSettings.ApiKey}";
+            string urlParameter = $"{AppSettings.Value.MovieApiSettings.AuthAddresses.RequestTokenUrl}?api_key={AppSettings.Value.MovieApiSettings.ApiKey}";
 
-            var response = await base.RequestExternalApiJson<Token>(settings.Value.MovieApiSettings.ApiBaseUrl, urlParameter);
+            var response = await base.RequestExternalApiJson<Token>(urlParameter);
 
             return response;
         }
@@ -33,28 +33,24 @@ namespace movies.bookmarks.infra.moviedb
         public string RequestUserPermissionUrl(string token, string redirectTo)
         {
             string url = string.Empty;
-            if (!string.IsNullOrEmpty(token))
-            {
-                url = $"{settings.Value.MovieApiSettings.AuthAddresses.UserAuthorizationBaseUrl}{settings.Value.MovieApiSettings.AuthAddresses.RequestUserAuthorizationUrl}{token}?redirect_to={redirectTo}";
-            }
-            else
-                throw new System.Exception("The parameter token cannot be null or empty");
+            url = $"{AppSettings.Value.MovieApiSettings.AuthAddresses.UserAuthorizationBaseUrl}{AppSettings.Value.MovieApiSettings.AuthAddresses.RequestUserAuthorizationUrl}{token}?redirect_to={redirectTo}";
+
             return url;
         }
 
         public async Task<ApiSession> CreateSession()
         {
-            string urlParameter = $"{settings.Value.MovieApiSettings.AuthAddresses.CreateSessionUrl}?api_key={settings.Value.MovieApiSettings.ApiKey}";
+            string urlParameter = $"{AppSettings.Value.MovieApiSettings.AuthAddresses.CreateSessionUrl}?api_key={AppSettings.Value.MovieApiSettings.ApiKey}";
 
-            var response = await base.RequestExternalApiJson<ApiSession>(settings.Value.MovieApiSettings.ApiBaseUrl, urlParameter);
+            var response = await base.RequestExternalApiJson<ApiSession>(urlParameter);
 
             return response;
         }
         public async Task<ApiGuestSession> CreateGuestSession()
         {
-            string urlParameter = $"{settings.Value.MovieApiSettings.AuthAddresses.CreateGuestSessionUrl}?api_key={settings.Value.MovieApiSettings.ApiKey}";
+            string urlParameter = $"{AppSettings.Value.MovieApiSettings.AuthAddresses.CreateGuestSessionUrl}?api_key={AppSettings.Value.MovieApiSettings.ApiKey}";
 
-            var response = await base.RequestExternalApiJson<ApiGuestSession>(settings.Value.MovieApiSettings.ApiBaseUrl, urlParameter);
+            var response = await base.RequestExternalApiJson<ApiGuestSession>(urlParameter);
 
             return response;
         }
